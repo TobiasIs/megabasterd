@@ -79,7 +79,7 @@ public class FolderLinkDialog extends javax.swing.JDialog {
         _total_space = 0L;
         _download = false;
         _download_links = new ArrayList<>();
-        _link = link;
+        _link = MiscTools.newMegaLinks2Legacy(link).trim();
 
         MiscTools.GUIRunAndWait(() -> {
 
